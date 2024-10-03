@@ -6,10 +6,14 @@ import { RouterOutlet } from '@angular/router';
   standalone: true,
   imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'] // Corrected property name
 })
 export class AppComponent {
-  title = 'harmandeep-singh-learning-angular-new';
-  student: string = 'w0833331';
-  favouriteGame:string='Cricket';
+  Games = {
+    name: 'World_cup 2017',
+    type: 'Cricket',
+    releaseYear: 2017,
+    multiplayer: true,
+    platform: 'application'
+  };
 }

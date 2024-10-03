@@ -1,11 +1,7 @@
-<html>
-<head>
-  <title>First Assignment</title>
+<!-- src/app/app.component.html -->
 
-</head>
-<body>
-<h1>{{title}}</h1>
-<h2>Student Id is {{student}}</h2>
-<h2>My favourite game  is {{favouriteGame}}</h2>
-</body>
-</html>
+<h1>{{ Games.name }}</h1>
+<p>Type of game: {{ Games.type }}</p>
+<p>Release Year: {{ Games.releaseYear }}</p>
+<p>Multiplayer: {{ Games.multiplayer ? 'Yes' : 'No' }}</p>
+<p>Platform: {{ Games.platform }}</p>
