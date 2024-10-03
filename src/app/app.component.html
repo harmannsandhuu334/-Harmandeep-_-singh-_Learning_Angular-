@@ -1,7 +1,12 @@
-<!-- src/app/app.component.html -->
+<h1>Game List</h1>
+<div >
+  <div *ngFor="let game of Games">
+    <h2>{{ game.name }}</h2>
+    <p>Genre: {{ game.type }}</p>
+    <p>Release Year: {{ game.releaseYear }}</p>
+    <p>Multiplayer: {{ game.multiplayer ? 'Yes' : 'No' }}</p>
+    <p>Platform: {{ game.platform }}</p>
+    <hr />
+  </div>
+</div>
 
-<h1>{{ Games.name }}</h1>
-<p>Type of game: {{ Games.type }}</p>
-<p>Release Year: {{ Games.releaseYear }}</p>
-<p>Multiplayer: {{ Games.multiplayer ? 'Yes' : 'No' }}</p>
-<p>Platform: {{ Games.platform }}</p>
