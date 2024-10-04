@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-import { IContent } from '../icontent';
-import { BookListItemComponent } from '../book-list-item/book-list-item.component';
-import {CommonModule} from "@angular/common";
+import { CommonModule } from '@angular/common';  // Import CommonModule
+import { BookListItemComponent } from '../book-list-item/book-list-item.component'; // Import the list item component
 
 @Component({
   selector: 'app-book-list',
   standalone: true,
-  imports: [BookListItemComponent, CommonModule],
+  imports: [CommonModule, BookListItemComponent],  // Add CommonModule here
   templateUrl: './book-list.component.html',
-  styleUrl: './book-list.component.css'
+  styleUrls: ['./book-list.component.css']
 })
 export class BookListComponent {
   books = [

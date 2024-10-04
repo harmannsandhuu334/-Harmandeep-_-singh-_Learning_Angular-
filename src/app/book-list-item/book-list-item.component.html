@@ -1,4 +1,4 @@
-<div class="content-list-item">
+<div [ngClass]="{'even-item': isEven, 'odd-item': !isEven}">
   <h3>{{ book.title }}</h3>
   <p>Author: {{ book.author }}</p>
   <p>Genre: {{ book.genre }}</p>
