@@ -1,9 +1,12 @@
 import { Component } from '@angular/core';
+import { IContent } from '../icontent';
 import { BookListItemComponent } from '../book-list-item/book-list-item.component';
+import {CommonModule} from "@angular/common";
+
 @Component({
   selector: 'app-book-list',
   standalone: true,
-  imports: [BookListItemComponent],
+  imports: [BookListItemComponent, CommonModule],
   templateUrl: './book-list.component.html',
   styleUrl: './book-list.component.css'
 })
